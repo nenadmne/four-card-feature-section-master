@@ -138,6 +138,7 @@ h2 {
         width: unset;
         padding: 5% 2%;
         width: 1404.44px;
+        height: 907.03px;
     }
 
     .bottom-right, .bottom-left, .upper, .down, .bottom, .bottom-mid {
@@ -182,7 +183,7 @@ h2 {
     html {
         width: 100%;
         min-width: 1404.44px;
-        min-height: 956.53px;
+        min-height: 997.03px;
         height: 100%;
         max-width: unset;
     }
