@@ -1,0 +1,189 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    border: 0;
+    margin: 0;
+    font-weight: 400;
+    color: hsl(234, 12%, 34%);
+}
+
+/* 
+### Primary
+
+- Red: hsl(0, 78%, 62%)
+- Cyan: hsl(180, 62%, 55%)
+- Orange: hsl(34, 97%, 64%)
+- Blue: hsl(212, 86%, 64%)
+*/
+
+html {
+    height: 100%;
+    min-height: 1430.75px;
+    min-width: 375px;
+}
+
+html, body, main, .top, .bottom, .bottom-right, .bottom-mid, .bottom-left, .upper, .down, .icon-div {
+    display: flex;
+    box-sizing: border-box;
+}
+
+main, .top, .bottom, .bottom-right, .bottom-mid, .bottom-left, .upper, .down {
+    flex-direction: column;
+}
+
+body, html {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    padding: 15% 5%;
+    background-color:hsl(0, 0%, 98%) ;
+    width: 375px;
+}
+
+body, .top {
+    background-color: hsl(0, 0%, 98%) ;
+}
+
+h1, h2, p, img {
+    margin: 0;
+}
+
+.icon-div, .text-div {
+    padding: 10%;
+}
+
+.icon-div {
+    padding-top: 0;
+}
+
+.top {
+    text-align: center;
+    padding: 0 0 20% 0;
+}
+
+.bottom-right, .bottom-mid, .bottom-left {
+    text-align: left;
+}
+
+.bottom-mid, .bottom-left, .upper, .down {
+    margin-bottom: 5%;
+}
+
+.span, h2 {
+    font-weight: 600;
+}
+
+h1 {
+    font-weight: 200;
+}
+
+.icon-div {
+    justify-content: right;
+}
+
+.bottom-right, .bottom-left, .upper, .down {
+    background-color: white;
+    border-radius: 1rem;
+}
+
+p, h1 {
+    color:hsl(229, 6%, 66%) ;
+}
+
+h1, span {
+    font-size: 1.7rem;
+}
+
+.top p {
+    margin-top: 5%;
+}
+
+h2 {
+    margin-bottom: 3%;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.bottom-left {
+    border-top: 0.3rem solid hsl(180, 62%, 55%);
+}
+
+.upper {
+    border-top: 0.3rem solid hsl(0, 78%, 62%);
+}
+
+.down {
+    border-top: 0.3rem solid hsl(34, 97%, 64%);
+}
+
+.bottom-right {
+    border-top: 0.3rem solid hsl(212, 86%, 64%);
+}
+
+@media (min-width: 576px) {
+
+    main {
+        flex-direction: column;
+    }
+
+    .bottom {
+        flex-direction: row;
+    }
+    
+    body {
+        padding: unset;
+        width: unset;
+        padding: 5%;
+        width: 1526.88;
+    }
+
+    .bottom-right, .bottom-left, .upper, .down, .bottom, .bottom-mid {
+        height: fit-content;
+    }
+
+    .bottom-mid, .down, .bottom-left {
+        margin-bottom: unset;
+    }
+
+    .bottom-right, .bottom-left, .bottom-mid {
+        flex-basis: 33.33%;
+    }
+
+    .text-div, .icon-div {
+        flex-basis: 50%;
+    }
+
+    img {
+        width: 30%;
+    }
+
+    .bottom-left, .bottom-right {
+        align-self: center;
+    }
+
+    .bottom-left, .bottom-mid {
+        margin-right: 3%
+    }
+
+    .upper {
+        margin-bottom: 8%;
+    }
+
+    .top {
+        padding: 0 5% 5% 5%;
+        width: fit-content;
+        align-self: center;
+        width: 50%;
+    }
+
+    html {
+        width: 100%;
+        min-width: 1526.88px;
+        min-height: 956.53px;
+        height: 100%;
+        max-width: unset;
+    }
+}
